@@ -1,0 +1,5 @@
+my_cos : my_cos.o
+		gcc -g -ansi -Wall my_cos.o -o my_cos -lm
+		
+my_cos.o : my_cos.c
+		gcc -c -ansi -Wall my_cos.c -o my_cos.o -lm
